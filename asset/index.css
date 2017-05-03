@@ -56,6 +56,7 @@ hr {height: 1px; background: #ecf0f1; margin: 0; }
 .text-justify {text-align: justify } .text-nowrap {white-space: nowrap } .text-lowercase {text-transform: lowercase } .text-uppercase {text-transform: uppercase } .text-capitalize {text-transform: capitalize }
 .visible-lg,.visible-md,.visible-sm,.visible-xs {display: none; }
 
+.color-white { color: #fff;}
 /* styling here */
 nav.nav{ position: fixed; top: 0; right: 0; left: 0; z-index: 1030; padding: 8px 15px;
   transition: all 0.3s ease-in-out 0s;
@@ -83,6 +84,16 @@ nav.nav .main-navbar .nav-item .nav-link {
 nav.nav.fixed-top {
   background-color: rgba(0, 0, 0, 0.5);
   border-bottom: solid 2px orange;
+  padding: 0px;
+}
+
+nav.nav.fixed-top .navbar-brand{
+  font-size: 25px;
+}
+
+nav.nav.fixed-top .main-navbar .nav-item .nav-link {
+  font-size: 20px;
+  margin-top: 10px;
 }
 
 section .container {
@@ -195,16 +206,29 @@ label {
     transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
 
-div#particles-js {
+#particles-js {
     position: fixed;
     top: 0;
     left: 0;
     z-index: -1;
+    height: 100%;
+}
+
+.section-header {
+    margin-bottom: 20px;
+}
+.section-header h2 {
+  font-size: 30px;
+  font-family: 'Fjalla One', sans-serif;
+  text-transform: uppercase;
+}
+section#about, section#portfolio {
+  padding-top: 100px;
 }
 
 section#skill {
     background-color: #2980B9;
-    padding: 100px 40px;
+    padding-top: 100px;
     color: white;
 }
 
@@ -212,7 +236,7 @@ section#contact {
     background-image: url(./email_bg.jpg);
     background-size: cover;
     background-attachment: fixed;
-    padding: 100px 40px;
+    padding-top: 100px;
     color: white;
 }
 
